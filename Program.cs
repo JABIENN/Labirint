@@ -4,15 +4,16 @@ class Program
 {
     public static void Main(string[] args)
     {
-
+        Logic l = new Logic(10, 10);
+        l.GameCycle();
     }
 }
 
 
 
-class Draw
+static class Draw
 {
-    public void DrawMap(char[,] map, int height, int width) 
+    public static void DrawMap(char[,] map, int height, int width) 
     { 
         int mapdraw = 0;
         for(int i = 0;  i < height; i++)
@@ -57,17 +58,24 @@ class Logic
     {
         this.height = height;
         this.width = width;
+
+        map = new char[width, height];
+
+        isRunning = true;
+        input = new Input();
     }
 
     public void GameCycle()
     {
+
+        GenerateMap();
         while (isRunning)
         {
             GetDirection(input.GetInput());
 
             TryMove();
 
-            draw.DrawMap(map, width, height);
+            Draw.DrawMap(map, width, height);
         }
     }
 
@@ -114,11 +122,24 @@ class Logic
 
     public void GenerateMap()
     {
-        int freq = 100;
-        Random random = new Random();
-        freq *= random.Next();
+       
+        
+        for (int i = 0; i < height; i++) 
+        {
+            for (int j = 0; j < width; j++)
+            {
+                int freq = 100;
+                Random random = new Random();
+                freq -= random.Next(0, 100);
+
+                if (freq < 30) map[i, j] = '#';
+                else map[i, j] = ' ';
+            }
+        }
 
         map[0, 0] = 'f';
         map[height - 1, width - 1] = '0';
+        coordX = -1; coordY = height - 1;
+
     }
 }

@@ -1,0 +1,5 @@
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.csproj.AssemblyReference.cache
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.GeneratedMSBuildEditorConfig.editorconfig
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.AssemblyInfoInputs.cache
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.AssemblyInfo.cs
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.csproj.CoreCompileInputs.cache
