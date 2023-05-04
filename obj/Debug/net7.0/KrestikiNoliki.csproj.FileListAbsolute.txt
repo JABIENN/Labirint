@@ -3,3 +3,13 @@ D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNol
 D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.AssemblyInfoInputs.cache
 D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.AssemblyInfo.cs
 D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.csproj.CoreCompileInputs.cache
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\bin\Debug\net7.0\KrestikiNoliki.exe
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\bin\Debug\net7.0\KrestikiNoliki.deps.json
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\bin\Debug\net7.0\KrestikiNoliki.runtimeconfig.json
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\bin\Debug\net7.0\KrestikiNoliki.dll
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\bin\Debug\net7.0\KrestikiNoliki.pdb
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.dll
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\refint\KrestikiNoliki.dll
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.pdb
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\KrestikiNoliki.genruntimeconfig.cache
+D:\David\Вижуал\KrestikiNoliki\KrestikiNoliki\obj\Debug\net7.0\ref\KrestikiNoliki.dll
