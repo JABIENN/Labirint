@@ -26,9 +26,25 @@ namespace KrestikiNoliki
 
         public const char ExitSymbol = 'f';
 
-        public const int WallFrequency = 19;
+        public const int WallFrequency = 25;
 
-        public const int TrapFrequency = 7;
+        public const int TrapFrequency = 8;
+
+        public const int NrgticsFrequency = 5;
+
+        public const char NrgSymbol = '|';
+
+        public const ConsoleColor NrgBackgroundColor = ConsoleColor.Magenta;
+
+        public const ConsoleColor NrgForegroundColor = ConsoleColor.Yellow;
+
+        public const int MaxPower = 100;
+
+        public const char AidSymbol = '+';
+
+        public const ConsoleColor AidBackgroundColor = ConsoleColor.White;
+
+        public const ConsoleColor AidForegroundColor = ConsoleColor.Red;
     }
 }
 

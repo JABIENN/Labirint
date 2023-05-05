@@ -8,7 +8,7 @@ namespace KrestikiNoliki
 {
     class Item
     {
-
+        
     }
 
     class Weapon : Item

@@ -26,6 +26,20 @@ namespace KrestikiNoliki
             }
         }
 
+        private int pwr
+        {
+            get 
+            {
+                return pwr;
+            }
+            set
+            {
+                if (pwr >= Consts.MaxPower) pwr = Consts.MaxPower;
+                else pwr = value;
+            }
+                
+        }
+
         private int armor;
 
         private List<Item> items;
