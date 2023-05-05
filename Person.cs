@@ -26,16 +26,17 @@ namespace KrestikiNoliki
             }
         }
 
-        private int pwr
+        private int _pwr;
+        public int pwr
         {
             get 
             {
-                return pwr;
+                return _pwr;
             }
             set
             {
-                if (pwr >= Consts.MaxPower) pwr = Consts.MaxPower;
-                else pwr = value;
+                if (value >= Consts.MaxPower) _pwr = Consts.MaxPower;
+                else _pwr = value;
             }
                 
         }

@@ -14,6 +14,10 @@ namespace KrestikiNoliki
             Console.ForegroundColor = Consts.AidForegroundColor;
 
             Console.Write(Consts.AidSymbol);
+
+
         }
+
+        public int GainHp = 20;
     }
 }

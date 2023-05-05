@@ -97,6 +97,12 @@ namespace KrestikiNoliki
                 case 'a':
                     horInp = -1;
                     break;
+                case 'b':
+                    DestroyWalls();
+                    person.pwr -= 10;
+                    break;
+
+
             }
         }
 
@@ -121,6 +127,12 @@ namespace KrestikiNoliki
                     break;
                 case EmptySpace space:
                     Move();
+                    break;
+                case Energetic energetic:
+                    person.pwr += energetic.EnergyAmount;
+                    break;
+                case FrstAid frstAid:
+                    person.hp += frstAid.GainHp;
                     break;
                 default: 
                     break;
@@ -190,6 +202,24 @@ namespace KrestikiNoliki
             else GenerateExit(random);
         }
 
+        void DestroyWalls()
+        {
+            for(int i = coordY-1; i < coordY+2; i++) 
+            { 
+                for(int j = coordX-1; j < coordX+2; j++)
+                {
+                    if (map[i, j] != null)
+                    {
+                        if (map[i, j].GetType() == typeof(Wall))
+                        {
+                            map[i,j] = new EmptySpace();
+                        }
+                    }
+                }
+            
+            }
+
+        }
  
     }
 }

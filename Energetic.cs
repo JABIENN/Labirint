@@ -14,6 +14,9 @@ namespace KrestikiNoliki
             Console.ForegroundColor = Consts.NrgForegroundColor;
 
             Console.Write(Consts.NrgSymbol);
+
         }
+
+        public int EnergyAmount = 20;
     }
 }

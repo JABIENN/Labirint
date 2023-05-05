@@ -6,19 +6,12 @@ using System.Threading.Tasks;
 
 namespace KrestikiNoliki
 {
-    class Item
+    abstract class Item : ILabirintPart
     {
-        
-    }
-
-    class Weapon : Item
-    {
-
-    }
-
-    class Armor : Item
-    {
-
+        public void DrawObject()
+        {
+           
+        }
     }
 
 }

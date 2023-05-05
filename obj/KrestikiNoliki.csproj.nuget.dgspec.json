@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj": {}
+    "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj": {
+    "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj",
+        "projectUniqueName": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj",
         "projectName": "KrestikiNoliki",
-        "projectPath": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj",
-        "packagesPath": "C:\\Users\\Les\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\obj\\",
+        "projectPath": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Les\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
