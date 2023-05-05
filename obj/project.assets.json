@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Les\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj",
+      "projectUniqueName": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj",
       "projectName": "KrestikiNoliki",
-      "projectPath": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\KrestikiNoliki.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\David\\Вижуал\\KrestikiNoliki\\KrestikiNoliki\\obj\\",
+      "projectPath": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\KrestikiNoliki.csproj",
+      "packagesPath": "C:\\Users\\Les\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Les\\source\\repos\\LabirintDavidNew\\LabirintDavidNew\\LabirintDavidNew\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Les\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
