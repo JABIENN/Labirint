@@ -29,7 +29,7 @@ namespace KrestikiNoliki
             this.height = height;
             this.width = width;
 
-            map = new ILabirintPart[width, height];
+            map = new ILabirintPart[height, width];
 
             isRunning = true;
             input = new Input();
@@ -39,10 +39,12 @@ namespace KrestikiNoliki
 
         public void GameCycle()
         {
-            Draw.DrawMap(map, width, height);
+            GenerateMap();
 
             do
             {
+                Draw.DrawMap(map, height, width);
+
                 GetDirection(input.GetInput());
 
                 TryMove();
@@ -76,9 +78,10 @@ namespace KrestikiNoliki
             horInp = 0;
             verInp = 0;
 
+            inp = char.ToLower(inp);
+
             switch (inp)
             {
-
                 case 's':
                     verInp = 1;
                     break;
@@ -86,6 +89,7 @@ namespace KrestikiNoliki
                 case 'd':
                     horInp = 1;
                     break;
+
                 case 'w':
                     verInp = -1;
                     break;
@@ -136,9 +140,9 @@ namespace KrestikiNoliki
         {
             Random random = new Random();
 
+            GenerateWalls(random);
             GeneratePerson(random);
             GenerateExit(random);
-            GenerateWalls(random);
         }
 
         void GenerateWalls(Random random)
