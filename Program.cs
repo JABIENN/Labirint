@@ -8,6 +8,7 @@ namespace KrestikiNoliki
         {
             Logic.NewGame(out var logic);
 
+
         }
 
 

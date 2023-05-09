@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,6 @@ namespace KrestikiNoliki
         public void GameCycle()
         {
             GenerateMap();
-
             do
             {
                 Draw.DrawMap(map, height, width);
@@ -50,7 +50,10 @@ namespace KrestikiNoliki
                 TryMove();
 
                 IsAlive();
-            }while (isRunning);
+
+                Console.WriteLine(person.hp);
+                Console.WriteLine(person.pwr);
+            } while (isRunning);
         }
 
         public static void NewGame(out Logic logic)
@@ -62,7 +65,7 @@ namespace KrestikiNoliki
 
         void IsAlive()
         {
-            if(person.hp < 0)
+            if (person.hp < 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -103,6 +106,9 @@ namespace KrestikiNoliki
                     break;
 
 
+
+
+
             }
         }
 
@@ -121,7 +127,7 @@ namespace KrestikiNoliki
                     Console.WriteLine("You Finished");
                     break;
                 case Trap trap:
-                    trap.PushOnTrap(ref person); 
+                    trap.PushOnTrap(ref person);
                     break;
                 case Wall wall:
                     break;
@@ -134,7 +140,7 @@ namespace KrestikiNoliki
                 case FrstAid frstAid:
                     person.hp += frstAid.GainHp;
                     break;
-                default: 
+                default:
                     break;
             }
         }
@@ -159,17 +165,25 @@ namespace KrestikiNoliki
 
         void GenerateWalls(Random random)
         {
-            for(int i = 0; i < height; i++) 
+            for (int i = 0; i < height; i++)
             {
-                for(int j = 0; j < width; j++)
+                for (int j = 0; j < width; j++)
                 {
                     int num = random.Next(0, 100);
 
-                    if (num <= Consts.WallFrequency)
-                        map[i, j] = new Wall();
+
+
+                    if (num <= Consts.AidFrequency)
+                        map[i, j] = new FrstAid();
+
+                    else if (num <= Consts.NrgticsFrequency)
+                        map[i, j] = new Energetic();
 
                     else if (num <= Consts.TrapFrequency)
                         map[i, j] = new Trap();
+
+                    else if (num <= Consts.WallFrequency)
+                        map[i, j] = new Wall();
 
                     else map[i, j] = new EmptySpace();
                 }
@@ -204,22 +218,22 @@ namespace KrestikiNoliki
 
         void DestroyWalls()
         {
-            for(int i = coordY-1; i < coordY+2; i++) 
-            { 
-                for(int j = coordX-1; j < coordX+2; j++)
+            for (int i = coordY - 1; i < coordY + 2; i++)
+            {
+                for (int j = coordX - 1; j < coordX + 2; j++)
                 {
                     if (map[i, j] != null)
                     {
                         if (map[i, j].GetType() == typeof(Wall))
                         {
-                            map[i,j] = new EmptySpace();
+                            map[i, j] = new EmptySpace();
                         }
                     }
                 }
-            
+
             }
 
         }
- 
+
     }
 }
